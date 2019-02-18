@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <main>
+    <main :class="{'orange-green': false}">
       <div class="app-container">
         <header class="app-header dark-brown">
           <h1>My Pet Store</h1>
