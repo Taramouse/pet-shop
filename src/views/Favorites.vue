@@ -1,22 +1,36 @@
 <template>
   <div>
     <v-list>
-      <v-subheader>My Favorites</v-subheader>
-      <v-list-tile avatar @click="{}">
-        <v-list-tile-avatar>
-          <img src="https://dog.ceo/api/img/husky/n02110185_1469.jpg">
-        </v-list-tile-avatar>
-        <v-list-tile-content>Fluffy</v-list-tile-content>
-        <v-list-tile-action>
-          <v-icon>delete</v-icon>
-        </v-list-tile-action>
-      </v-list-tile>
+      <v-subheader v-if="!favorites.length">Your favorites list is empty</v-subheader>
+      <div v-else>
+        <v-subheader>Your favorites</v-subheader>
+        <v-list-tile avatar v-for="dog in favorites" :key="dog.name" @click="{}">
+          <v-list-tile-avatar>
+            <img :src="dog.img">
+          </v-list-tile-avatar>
+          <v-list-tile-content>{{dog.name}}</v-list-tile-content>
+          <v-list-tile-action>
+            <v-icon @click="removeFromFavorites(dog)">delete</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+      </div>
     </v-list>
   </div>
 </template>
 
 <script>
-export default {}
+import { mapActions } from 'vuex'
+
+export default {
+  computed: {
+    favorites() {
+      return this.$store.state.favorites
+    }
+  },
+  methods: {
+    ...mapActions(['removeFromFavorites'])
+  }
+}
 </script>
 
 <style>
