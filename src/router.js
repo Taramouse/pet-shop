@@ -24,6 +24,11 @@ export default new Router({
       name: 'favorites',
       component: () =>
         import(/* webpackChunkName: "favorites" */ './views/Favorites.vue')
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: () => import(/* webpackChunkName: "form" */ './views/Form.vue')
     }
   ]
 })
