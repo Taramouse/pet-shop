@@ -15,6 +15,9 @@
         </v-list-tile>
       </div>
     </v-list>
+    <v-layout justify-center>
+      <v-btn color="error" @click="clearFavorites">Clear Favorites</v-btn>
+    </v-layout>
   </div>
 </template>
 
@@ -28,7 +31,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['removeFromFavorites'])
+    ...mapActions(['removeFromFavorites', 'clearFavorites'])
   }
 }
 </script>
