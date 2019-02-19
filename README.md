@@ -1,29 +1,5 @@
-# vv-pet-shop
+# Pet Shop
 
-## Project setup
-```
-yarn install
-```
+## Vue Vixens
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project was created by following the [Vue Vixens](https://vuevixens.github.io/docs/) full day workshop.
