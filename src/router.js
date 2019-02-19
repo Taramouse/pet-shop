@@ -18,6 +18,12 @@ export default new Router({
       // this generates a separate chunk (pets.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "pets" */ './views/Pets.vue')
+    },
+    {
+      path: '/favorites',
+      name: 'favorites',
+      component: () =>
+        import(/* webpackChunkName: "favorites" */ './views/Favorites.vue')
     }
   ]
 })
