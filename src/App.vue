@@ -10,7 +10,7 @@
           <div class="panel tall-panel light-mint">
             <h2>Pet Products</h2>
             <p>Premium Puppy Chow</p>
-            <p>Kibble, sale in bulk, $20/lb</p>
+            <p>Kibble, sale in bulk, £10/lb</p>
             <img
               src="https://raw.githubusercontent.com/VueVixens/projects/master/petshop/images/food.png"
             >
@@ -61,13 +61,8 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  },
   data() {
     return {
       themeSwitched: false
