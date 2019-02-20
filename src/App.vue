@@ -8,6 +8,7 @@
             <v-toolbar-items>
               <v-btn to="/" flat>Home</v-btn>
               <v-btn to="/pets" flat>Pets</v-btn>
+              <v-btn to="/form" flat>Adopt</v-btn>
             </v-toolbar-items>
             <v-spacer></v-spacer>
             <router-link to="/favorites">
@@ -17,7 +18,7 @@
               </v-badge>
             </router-link>
           </v-toolbar>
-          <v-btn @click="themeSwitched = !themeSwitched">Switch Theme</v-btn>
+          <v-btn @click="themeSwitched = !themeSwitched">Theme</v-btn>
         </header>
         <router-view></router-view>
         <footer class="app-footer dark-brown">
