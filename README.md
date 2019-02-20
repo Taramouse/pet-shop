@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/755b8192-48be-4336-a5b3-37034bf9bc54/deploy-status)](https://app.netlify.com/sites/youthful-nobel-7ca695/deploys)
+
 # Pet Shop Demo
 
 ## Vue Vixens
